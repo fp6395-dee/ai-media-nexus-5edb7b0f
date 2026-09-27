@@ -1,0 +1,13 @@
+{
+  "name": "ai-media-nexus",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "start:api": "cd apps/api-core && uvicorn app.main:app --reload"
+  }
+}
